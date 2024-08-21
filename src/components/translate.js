@@ -12,9 +12,6 @@ async function ProcessChatText(content, sourceLang, tagretLang) {
                 // supported languages https://docs.aws.amazon.com/translate/latest/dg/how-it-works.html#how-it-works-language-codes
             },
             targetLanguage: tagretLang,
-            Settings: {
-                Formality: 'FORMAL'
-        }
     });
     return transcriptMessage.text
 }
