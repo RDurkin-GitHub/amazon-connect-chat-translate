@@ -11,8 +11,7 @@ async function ProcessChatText(content, sourceLang, tagretLang) {
                 language: sourceLang, // defaults configured on aws-exports.js
                 // supported languages https://docs.aws.amazon.com/translate/latest/dg/how-it-works.html#how-it-works-language-codes
             },
-            targetLanguage: tagretLang,
-            Settings = {"Formality": "FORMAL"}
+            targetLanguage: tagretLang
         }
     });
     return transcriptMessage.text
